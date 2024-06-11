@@ -30,7 +30,7 @@ Additional Information
 - [References](#references)
 
 ## Introduction
-This document provides comprehensive details of the datasets generated from the project titled, "Hardware-in-the-Loop Laboratory Performance Verification of Flexible Building Equipment in a Typical Commercial Building." This project is financially supported by the U.S. Department of Energy under grant number EE-0009153. These datasets are obtained from extensive hardware-in-the-loop (HIL) testing of a Water Source Heat Pump (WSHP) system at the Texas A&M University (TAMU), conducted under a diverse range of conditions and operational settings. 
+This document provides comprehensive details of the datasets generated from the project titled, "Hardware-in-the-Loop Laboratory Performance Verification of Flexible Building Equipment in a Typical Commercial Building." This project was financially supported by the U.S. Department of Energy under grant number EE-0009153. These datasets were obtained from extensive hardware-in-the-loop (HIL) testing of a Water Source Heat Pump (WSHP) system at the Texas A&M University (TAMU), conducted under a diverse range of conditions and operational settings. 
 
 ## Repository Structure
 **[data](data)** contains all datasets organized into three levels of subfolders:
