@@ -14,7 +14,7 @@ Overview
 - [Introduction](#introduction)
 - [Repository Structure](#repository-structure)
 - [Data Description](#data-description)
-
+- [Data Schema](#data-schema)
 
 Technical Details
 - [Methodology](#methodology)
@@ -45,11 +45,15 @@ This document provides comprehensive details of the datasets generated from the 
 ## Data Description
 Data point definitions can be found in [assets/Metadata.csv](assets/Metadata.csv).
 
-
+## Data Schema
+### Brick
 See [assets/brick/HIL_WSHP_Brick_v1-3-0.ttl](assets/brick/HIL_WSHP_Brick_v1-3-0.ttl) and [assets/brick/HIL_WSHP_Brick_v1-3-0_DenseOcc.ttl](assets/brick/HIL_WSHP_Brick_v1-3-0_DenseOcc.ttl) for the Brick models that represent the data points and their relationships. Specifically, the `_DenseOcc` version is associated with the data tested under the dense occupancy `DenOcc` scenario. These models were validated against [Brick v1.3.0](assets/brick/Brick_v1-3-0.ttl) and its [occupancy extension](assets/brick/brick_occ_ext.ttl). The following figures show the data points relationships created within the Brick models.
 
 ![The Schematic Diagram of the WSHP Brick Model (Relationships)](assets/brick/WSHP_Brick_Diagram_Rel.jpg)
 ![The Schematic Diagram of the WSHP Brick Model (Points)](assets/brick/WSHP_Brick_Diagram_Points.jpg)
+
+### ASHRAE 223p
+See [assets/223p/WSHP.ttl](assets/223p/WSHP.ttl) for the ASHRAE 223p model. Please note that the 223p standard has not been officially published and is subject to change in the future. For more infomation about the 223p standard, please refer to [https://open223.info/](https://open223.info/).
 
 ## Methodology
 The datasets were generated using a Water Source Heat Pump Hardware-In-the-Loop Flexible load Testbed (WSHP HILFT). The figure below illustrates the general framework of a HILFT, consisting of two parts: the hardware testbed and the software testbed. The software testbed includes a virtual building model, a Grid-interactive Efficient Building (GEB) control model, and a ground loop heat exchanger model. The virtual building model further incorporates a zone load model, an occupant comfort & behavior model, and an airflow model. For more detailed information about the development and integration of the general HILFT (not limited to WSHP HILFT), please refer to [^1]. For specific details regarding the implementation of the WSHP HILFT, please refer to [^2]. The figure below provides an overview of the general HILFT framework.
@@ -92,7 +96,7 @@ This data repository includes real-time HIL WSHP testing data considering:
 
 The **Default** cases (i.e., the third column of the table) were tested with typical summer weather, using a rule-based control (RBC) strategy, with a typical building type, occupancy, and occupant behaviors, and without TES. Each subsequent column header points to the deviation from this default setting. 
 
-Details regarding the test settings of these scenarios can be found in [assets/WSHP_Test_Settings](assets/IBAL_Test_Settings.pdf).
+Details regarding the test settings of these scenarios can be found in [assets/WSHP_Test_Settings](assets/WSHP_Test_Settings.pdf).
 
 | Location | GEB Scenario | Default | ExtrmSum | TypShldr | ExtrmWin | MPC | STD2019 | DenOcc | EnergySave | TES |
 | ---      | ---          | ---     | ---      | ---      | ---      | --- | ---     | ---    | ---        | --- |
